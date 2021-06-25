@@ -1,11 +1,523 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<title>uncoiled.github.io</title>
+<meta name="robots" content="index, follow">
+<meta name="description" content="uncoiled.github.io">
+<link rel="icon" type="image/png" href="/imgs/favic.png"/>
+<meta name="designer" content="uncoiled">
+<meta name="owner" content="uncoiled">
+<meta name="author" content="uncoiled">
+<meta property="og:title" content="uncoiled: Főoldal">
+<meta property="og:image" content="/imgs/favic.png"/>
+<meta property="og:description" content="uncoiled.github.io">
+<meta property="og:site_name" content="uncoiled.github.io"/>
+<meta property="og:url" content="/">
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed for uncoiled" href="/rss.xml" />
+
+
+
+
+
+
+
+
+
+
+<style>
+
+body {
+background:#222;
+
+color:white;
+word-break: break-word;
+}
+.justo p {text-align: justify;}
+#status {font-weight: bold;}
+.vbn {font-weight:bold;}
+@media screen and (min-width: 200px) {
+  .con {
+    margin:auto;
+width:50%;
+
+  }
+  a {color:cyan;cursor:pointer;text-decoration:none;}
+.w {color:#c3c3c3;background:#222;white-space: pre-wrap;}
+.x {color:#c3c3c3;background:#222;}
+
+
+
+a.ric {
+
+position:absolute;
+float:right;
+
+
+
+
+
+}
+
+.rid {
+color:cyan;
+position:relative;
+float:left;
+font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+
+
+
+
+}
+
+.post-img{ width:100%; margin:auto; display:block;}
+
+
+#header {
+  display: flex;
+  align-items: baseline;
+  margin: 15px;
+  color: cyan;
+  font-family: monospace;
+}
+
+
+
+
+
+
+
+
+
+
+.tocv ol {list-style: none;
+counter-reset: li;
+text-align: justify;
+display:block;
+
+}
+
+
+.tocv li::before {
+content: counter(li);
+color: lime;
+display: inline-block;
+width: 3em;
+font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+font-size:14pt;
+ }
+  
+.tocv li {
+	
+	display:inline-table;
+	counter-increment: li;
+	text-align:center;
+	width:50px;
+	padding: 20px;
+    font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+	font-size:9pt;
+}
+
+
+.typewriter h4 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+    
+  
+  color: cyan ;
+}
+
+/* Animation */
+.typewriter h4 {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+  
+}
+
+
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+  
+}
+
+
+
+blockquote { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 11px; font-style: italic; font-variant: normal; line-height: 12px; padding: 20px;margin:auto;with:50%;} 
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 800px) {
+  .con {
+    margin:auto;
+width:70%;
+
+}
+a {color:lime;cursor:pointer;text-decoration:none;}
+.w {color:#c3c3c3;background:#222;white-space: pre-wrap;}
+  .x {color:#c3c3c3;background:#222;}
+  
+  
+  .rid {
+color:lime;
+position:relative;
+float:left;
+
+font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+
+
+
+}
+  .post-img{ width:100%; padding: 10px; margin: 0 0 0 0;}
+
+  
+  
+  #header {
+  display: flex;
+  align-items: baseline;
+  margin: 15px;
+  color: lime;
+  font-family: monospace;
+}
+
+
+  
+  
+  
+  
+  
+
+.tocv ol {list-style: none;
+counter-reset: li;
+text-align: justify;
+display:block;
+
+}
+
+
+.tocv li::before {
+content: counter(li);
+color: red;
+display: inline-block;
+width: 3em;
+font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+font-size:14pt;
+ }
+  
+.tocv li {
+	
+	display:inline-table;
+	counter-increment: li;
+	text-align:center;
+	width:50px;
+	padding: 20px;
+    font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+	font-size:10pt;
+}
+
+  
+  
+.typewriter h4 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+    
+  
+  color: lime ;
+}
+
+/* Animation */
+.typewriter h4 {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+  
+}
+
+
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+  
+}
+  
+  blockquote { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px;} 
+
+}
+
+@media print {
+  body {
+    color: black;
+	background: white;
+  }
+  a {color:blue;}
+  .w {color:black;white-space: pre-wrap;}
+  .x {color:black;}
+  
+  
+  blockquote { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+
+  
+  
+}
+
+
+h1 { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
+h3 { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+p { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+pre { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
+.pok { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; padding:3px;} 
+.x li { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
+
+
+</style>
+
+
+
+
+
+
+
+<script src="/js/jquery.js"></script>
+
+<script src="/js/jquery.min.js"></script>
+
+
+
+
+<script>
+  $(function(){
+    $('[id$="-include"]').each(function (e){
+        $(this).load("/engine\\" + $(this).attr("id").replace("-include", "") +  ".html");
+    });
+  });
+</script>
+
+
+<script>
+
+$(document).ready(function () { $('body').hide().fadeIn(1500).delay(4000)});
+</script>
+
+
 </head>
 <body>
-    test Document
+
+<div id="header"> 
+<p id="status"></p><span class="vbn">&gt;</span>
+
+<div class="typewriter">
+  <h4>uncoiled.github.io</h4>
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="con">
+
+
+
+
+
+
+
+
+<blockquote>
+
+<!--
+Current status: Updated
+-->
+
+
+
+
+
+
+</blockquote>
+
+<ol class="tocv">
+<li><a href="/index.html#about">Az oldalról</a></li>
+
+
+
+<span id="menu0001-include"></span>
+
+
+</ol>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<!--elvalaszto_0001-->
+<script>
+function selectText0001() {
+    if (document.selection) { // IE
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById('target-id0001'));
+        range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById('target-id0001'));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
+</script>
+<a name="about"></a><br><br><br><br>
+<button onclick="selectText0001();">kijelölés: kód</button><a class="ric" href="#" title="RETURN">&nbsp;&nbsp;&nbsp;VISSZATÉRÉS&nbsp;&nbsp;&nbsp;</a><br>
+
+<p>
+<span class="x" id="target-id0001">
+KÓD<br>
+</span>
+
+
+</p>
+
+
+
+
+
+
+
+<p class="justo">
+
+
+
+<br><br><br>
+<ol>
+<li>Mi ez?</li> <li>Mit jelent az, hogy uncoiled?</li> 
+</ol>
+<br><br>
+<ol>
+<li>
+Ez a github -omhoz tartozó weboldal.
+</li>
+
+<li>
+Tükörfordítással tekercseletlen -t jelent. Ez egy fantázianév saját ötlet - egyedi elnevezése a projektjeim egy részének.
+</li>
+</ol>
+
+<br><br><br><br>
+
+<span class="rid">
+készült: 2021.02.02.
+<br>
+frissítve: 2021.06.25.
+</span>
+
+
+
+</p>
+
+<br><br><br><br>
+
+
+
+<!--elvalaszto_vege_0001-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+
+var os_str=navigator.platform // to get operating system
+os_str2=os_str.toLowerCase() // convert result to lower case
+
+
+	
+//document.write.innerHTML(navigator.platform);
+document.getElementById('status').innerHTML = navigator.platform;
+
+</script>
 </body>
 </html>
