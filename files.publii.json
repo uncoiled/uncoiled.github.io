@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "fc712663808af6dfe409d2e4dd260a0a"
+        "md5": "4d2d4cde36ca8e80d719fb08b0d545dd"
     },
     {
         "path": "assets",
@@ -102,7 +102,7 @@
     {
         "path": "/authors/nocsak/index.html",
         "type": "file",
-        "md5": "f1c24fb7aa90173d21cf6cf7716084d2"
+        "md5": "7248092676fc200ca8d70232ac7f0cbd"
     },
     {
         "path": "feed.json",
@@ -117,7 +117,22 @@
     {
         "path": "index.html",
         "type": "file",
-        "md5": "a67c5ff8de5fdc065283433c160eb2de"
+        "md5": "04694ee2b49c63c9894235a7e3556beb"
+    },
+    {
+        "path": "media",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/website",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/uncoiled_avatar_bg.ico",
+        "type": "file",
+        "md5": "32a0752db3b10832e4550cdf66cf645d"
     },
     {
         "path": "robots.txt",
@@ -142,11 +157,6 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "9c6caf6181236c0b4e2e5e9613f16ddc"
-    },
-    {
-        "path": "terminal_2.1.0.0.zip",
-        "type": "file",
-        "md5": "4bd7749afd1931bc39c2b8597a8ea934"
+        "md5": "61e090358f80398924d77a093c2020fe"
     }
 ]
